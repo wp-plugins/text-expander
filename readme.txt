@@ -4,7 +4,7 @@ Contributors: Dagon Design
 Tags: posts, content
 Requires at least: 2.0.0
 Tested up to: 3.0.1
-Stable tag: trunk
+Stable tag: 0.1
 
 Allows you to define areas of text that expand/collapse when clicked. It improves Dagon Design's Expanding Text-Plugin.
 
