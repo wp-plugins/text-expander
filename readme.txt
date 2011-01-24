@@ -3,7 +3,7 @@ Contributors: Hedge
 Tags: posts, content
 Requires at least: 2.0.0
 Tested up to: 3.0.4
-Stable tag: 0.2
+Stable tag: 0.3
 
 Allows you to define areas of text that expand/collapse when clicked. It is an improved version of Dagon Design's Expanding Text-Plugin.
 
@@ -32,6 +32,10 @@ Website-elements which are collapsable help avoiding visual noise these days and
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
 == Changelog ==
+= 0.3 =
+* fixed bug where Expander-titles were mixed
+* fixed bug where Text Expander wasn't working when jQuery hasn't been already loaded by another plugin
+
 = 0.2 =
 * added a media button in the post-editor to add expanding text more directly
 * add settings to customize the text prepending the expand-link
