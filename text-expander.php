@@ -149,25 +149,26 @@ function expander_javascript() {
 <script language="JavaScript" type="text/javascript"><!--
 
 function expand(param) {
- jQuery("div"+param).stop().slideToggle("slow", function() {
-    linkname = jQuery("a"+param).html();
+ jQuery("div"+param).stop().slideToggle(function() {
+    /*linkname = jQuery("a"+param).html();*/
     if( jQuery("div"+param).is(":visible") ) {
-      jQuery("a"+param).html(expand_text+" "+linkname.substring(collapse_text_length));
+      jQuery("a"+param+" > span").html(expand_text);
     }
     else {
-        jQuery("a"+param).html(collapse_text+" "+linkname.substring(expand_text_length));
+        jQuery("a"+param+" > span").html(collapse_text);
     }
+
   });
 
 }
 function expander_hide(param) {
+        // hide original div
         jQuery("div"+param).hide();
 		linkname = jQuery("a"+param).html();
         collapse_text  = "'.$options['collapse_text'].'";
         expand_text    = "'.$options['expand_text'].'";
-        collapse_text_length = jQuery("<span />").html(collapse_text).text().length;
-        expand_text_length = jQuery("<span />").html(collapse_text).text().length;
-        jQuery("a"+param).html(collapse_text + " " + linkname);
+
+        jQuery("a"+param).html(linkname).prepend("<span class=\"collapse-text\">"+collapse_text+"</span>");
         jQuery("a"+param).show();
 }
 //--></script>

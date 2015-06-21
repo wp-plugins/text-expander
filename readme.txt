@@ -2,10 +2,10 @@
 Contributors: Hedge
 Tags: posts, content
 Requires at least: 2.0.0
-Tested up to: 3.0.4
-Stable tag: 0.3
+Tested up to: 4.2.2
+Stable tag: 0.4
 
-Allows you to define areas of text that expand/collapse when clicked. It is an improved version of Dagon Design's Expanding Text-Plugin.
+Allows you to define areas of text that expand/collapse when clicked.
 
 == Description ==
 
@@ -14,7 +14,7 @@ Website-elements which are collapsable help avoiding visual noise these days and
 <h4>
     Improvements compared to Expanding Text
   </h4>
-  
+
   <ul style="margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 30px;">
     <li style="margin: 0px;">
       You can freely choose a text to be shown in front of the expand-link (default is a double-arrow), which indicates whether the part is collapsed or expanded next
@@ -32,6 +32,10 @@ Website-elements which are collapsable help avoiding visual noise these days and
 
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
 == Changelog ==
+= 0.4 =
+* improved expander-function
+* the collapse-text can now be styled with CSS using .collapse-text { }
+
 = 0.3 =
 * fixed bug where Expander-titles were mixed
 * fixed bug where Text Expander wasn't working when jQuery hasn't been already loaded by another plugin
