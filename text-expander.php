@@ -128,7 +128,7 @@ function expander_process($content) {
 		mt_srand((double)microtime()*1000000);
 		$rnum = mt_rand();
 
-		$new_string = '<a style="display:none;" id="te' . $rnum;
+		$new_string = '<a style="display:none;" class="collapse-text" id="te' . $rnum;
 		$new_string .= '" href="javascript:expand(\'#te' . $rnum . '\')">';
 		$new_string .= $sdesc . '</a>' . "\n";
 		$new_string .= '<div class="te_div" id="te' . $rnum . '">';
@@ -168,7 +168,7 @@ function expander_hide(param) {
         collapse_text  = "'.$options['collapse_text'].'";
         expand_text    = "'.$options['expand_text'].'";
 
-        jQuery("a"+param).html(linkname).prepend("<span class=\"collapse-text\">"+collapse_text+"</span>");
+        jQuery("a"+param).html(linkname).prepend("<span class=\"collapse-pre\">"+collapse_text+"</span>");
         jQuery("a"+param).show();
 }
 //--></script>

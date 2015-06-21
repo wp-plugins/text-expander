@@ -34,7 +34,7 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 == Changelog ==
 = 0.4 =
 * improved expander-function
-* the collapse-text can now be styled with CSS using .collapse-text { }
+* the collapse link and the element-before it can now be styled with CSS using .collapse-text and .collapse-pre
 
 = 0.3 =
 * fixed bug where Expander-titles were mixed
